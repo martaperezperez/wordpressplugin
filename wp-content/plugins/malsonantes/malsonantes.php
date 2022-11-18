@@ -24,4 +24,8 @@ function cambiar_malsonantes($text)
  */
 add_filter('the_content', 'cambiar-malsonantes');
 
+function jal_install(){
+    global $wpdb;
 
+    $table_name = $wpdb ->prefix . "liveshoutbox";
+}
